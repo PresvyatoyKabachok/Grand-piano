@@ -312,13 +312,11 @@ void updateJump(double delta_time)
 
 		if (t <= 1.0)
 		{
-			// Параболическая анимация
-			moveZ = -4.0 * t * (t - 1.0); // от 0 до 1 и обратно
+			moveZ = -4.0 * t * (t - 1.0); 
 			moveZ *= jumpHeight;
 		}
 		else
 		{
-			// Заканчиваем прыжок
 			moveZ = 0.0;
 			isJumping = false;
 			jumpTimer = 0.0;
@@ -442,6 +440,7 @@ void DrawWKey(Point A, Point B,Point C,Point D,Point E,Point F,Point G, Point H,
 		glVertex3dv(G1.p());
 		glEnd();
 	}
+
 	N = CalculateQuadNormal(G, F, F1, G1, true);
 	glBegin(GL_QUADS);
 	glNormal3dv(N.p());
@@ -901,6 +900,7 @@ void DrawPodium(double r, double Ox, double Oy)
 	}
 
 	r += 1;
+
 	for (int i = 0; i < n; i++)
 	{
 		a1 = 2 * PI / n * i;
@@ -941,10 +941,12 @@ void DrawPodium(double r, double Ox, double Oy)
 
 void DrawS(double Ox,double Oy)
 {
-	double r = 1.5, a1, a2;
-	int n = 180;
+	double r = 1.5;
+	double a1, a2;
 	double start_angle = PI;      
 	double end_angle = 2 * PI;
+	int n = 180;
+
 	for (int i = 0; i < n; i++)
 	{
 		a1 = start_angle + (end_angle - start_angle) * i / n;
@@ -977,6 +979,7 @@ void DrawS(double Ox,double Oy)
 		C = { Ox + (r - 0.03) * cos(a2), Oy + (r - 0.03) * sin(a2), -0.15 };
 		D = { Ox + (r - 0.03) * cos(a1), Oy + (r - 0.03) * sin(a1), -0.15 };
 		M = { Ox, Oy, -0.15 };
+
 		N = CalculateQuadNormal(D, C, M, M);
 		glNormal3dv(N.p());
 		glBegin(GL_TRIANGLES);
@@ -996,6 +999,7 @@ void DrawS(double Ox,double Oy)
 
 		C = { Ox + r * cos(a2), Oy + r * sin(a2), 1 };
 		D = { Ox + r * cos(a1), Oy + r * sin(a1), 1 };
+
 		N = CalculateQuadNormal(B, A, D, C);
 		glNormal3dv(N.p());
 		glBegin(GL_QUADS);
@@ -1082,6 +1086,7 @@ void DrawS(double Ox,double Oy)
 
 	H.z = 0.53;
 	D.z = H.z;
+
 	glBegin(GL_QUADS);
 	glNormal3dv(CalculateQuadNormal(H, E, A, D, true).p());
 	glVertex3dv(E.p());
@@ -1100,6 +1105,7 @@ void DrawS(double Ox,double Oy)
 
 	H1.z = -0.15;
 	D1.z = H1.z;
+
 	glBegin(GL_QUADS);
 	glNormal3dv(CalculateQuadNormal(E1, H1, D1, A1, true).p());
 	glVertex3dv(E1.p());
@@ -1147,6 +1153,7 @@ void DrawS(double Ox,double Oy)
 
 	H.z = -0.2;
 	H1.z = H.z;
+
 	glBegin(GL_QUADS);
 	glNormal3dv(CalculateQuadNormal(H1, H, G, G1, true).p());
 	glVertex3dv(H1.p());
@@ -1206,6 +1213,7 @@ void DrawS(double Ox,double Oy)
 		B = { Mx + (r + 0.03) * cos(a2), My + (r + 0.03) * sin(a2), 1 };
 		C = { Mx + (r + 0.03) * cos(a1), My + (r + 0.03) * sin(a1), -0.15 };
 		D = { Mx + (r + 0.03) * cos(a2), My + (r + 0.03) * sin(a2), -0.15 };
+
 		N = CalculateQuadNormal(B, A, D, C);
 		glNormal3dv(N.p());
 		glBegin(GL_QUADS);
@@ -1213,11 +1221,11 @@ void DrawS(double Ox,double Oy)
 		glVertex3dv(B.p());
 		glVertex3dv(D.p());
 		glVertex3dv(C.p());
-		
 		glEnd();
 	
 		C = { Mx + r * cos(a2), My + r * sin(a2), 1 };
 		D = { Mx + r * cos(a1), My + r * sin(a1), 1 };
+
 		N = CalculateQuadNormal(A, B, C, D);
 		glNormal3dv(N.p());
 		glBegin(GL_QUADS);
@@ -1225,8 +1233,7 @@ void DrawS(double Ox,double Oy)
 		glVertex3dv(B.p());
 		glVertex3dv(C.p());
 		glVertex3dv(D.p());
-		glEnd();
-		
+		glEnd();	
 	}
 
 	Point u{ 1.983, -0.2, -0.15 };
@@ -1237,7 +1244,6 @@ void DrawS(double Ox,double Oy)
 	glVertex3dv(J.p());
 	glVertex3dv(K.p());
 	glVertex3dv(u1.p());
-
 	glEnd();
 	
 	glBegin(GL_QUADS);
@@ -1251,6 +1257,7 @@ void DrawS(double Ox,double Oy)
 	H1.z = -0.15;
 	G1.z = H1.z;
 	J.z = H1.z;
+
 	glBegin(GL_QUADS);
 	glNormal3dv(CalculateQuadNormal(G1, H1, u, J, true).p());
 	glVertex3dv(H1.p());
@@ -1262,6 +1269,7 @@ void DrawS(double Ox,double Oy)
 	D1.z = -0.2;
 	Point o1{ 1.983,-2, -0.2};
 	Point o{ 1.983,-2, -0.15 };
+
 	glBegin(GL_QUADS);
 	glNormal3dv(CalculateQuadNormal(C1, D1, u1, o1, true).p());
 	glVertex3dv(C1.p());
@@ -1272,6 +1280,7 @@ void DrawS(double Ox,double Oy)
 
 	D1.z = -0.15;
 	C1.z = D1.z;
+
 	glBegin(GL_QUADS);
 	glNormal3dv(CalculateQuadNormal(D1, C1, o, u, true).p());
 	glVertex3dv(C1.p());
@@ -1283,8 +1292,11 @@ void DrawS(double Ox,double Oy)
 
 void DrawCap(double Ox, double Oy)
 {
-	double r = 1.5, a1, a2, start_angle = PI, end_angle = 2 * PI;
+	double r = 1.5;
+	double a1, a2; 
+	double start_angle = PI, end_angle = 2 * PI;
 	int n = 180;
+
 	for (int i = 0; i < n; i++)
 	{
 		a1 = start_angle + (end_angle - start_angle) * i / n;
@@ -1313,6 +1325,7 @@ void DrawCap(double Ox, double Oy)
 		glEnd();
 
 		M = { Ox, Oy, 1.05 };
+
 		N = CalculateQuadNormal(D, C, M, M);
 		glNormal3dv(N.p());
 		glBegin(GL_TRIANGLES);
@@ -1464,6 +1477,7 @@ void DrawCap(double Ox, double Oy)
 		glEnd();
 
 		M = { 1.983, -0.2, 1 };
+
 		N = CalculateQuadNormal(A, B, M, M);
 		glNormal3dv(N.p());
 		glBegin(GL_TRIANGLES);
@@ -1501,6 +1515,7 @@ void DrawCap(double Ox, double Oy)
 	H1.z = 1.05;
 	G1.z = H1.z;
 	J.z = H1.z;
+
 	glBegin(GL_QUADS);
 	glNormal3dv(CalculateQuadNormal(G1, H1, u, J, true).p());
 	glVertex3dv(H1.p());
@@ -1511,6 +1526,7 @@ void DrawCap(double Ox, double Oy)
 
 	Point o1{ 1.983,-2, 1 };
 	Point o{ 1.983,-2, 1.05 };
+
 	glBegin(GL_QUADS);
 	glNormal3dv(CalculateQuadNormal(C1, D1, u1, o1, true).p());
 	glVertex3dv(C1.p());
@@ -1521,6 +1537,7 @@ void DrawCap(double Ox, double Oy)
 
 	D1.z = 1.05;
 	C1.z = D1.z;
+
 	glBegin(GL_QUADS);
 	glNormal3dv(CalculateQuadNormal(D1, C1, o, u, true).p());
 	glVertex3dv(C1.p());
@@ -1532,7 +1549,6 @@ void DrawCap(double Ox, double Oy)
 
 void DrawBody(double delta_time)
 {
-	
 	DrawKeyboard();
 	DrawS(3.483, -2);
 	DrawLegs(0.15,0.4, 0.5);
@@ -1541,7 +1557,6 @@ void DrawBody(double delta_time)
 	
 	glPushMatrix();
 	updateCapAnim(delta_time);
-	glPushMatrix();
 	glTranslated(4.983, -0.2, 1);
 	glRotatef(CapAngle, 0, 1, 0);
 	glTranslated(-4.983, 0.2, -1);
@@ -1551,7 +1566,6 @@ void DrawBody(double delta_time)
 
 void Render(double delta_time)
 {    
-	
 	full_time += delta_time;
 	
 	//натройка камеры и света
@@ -1563,6 +1577,7 @@ void Render(double delta_time)
 	{
 		light.SetPosition(camera.x(), camera.y(), camera.z());
 	}
+
 	camera.SetUpCamera();
 	//забираем моделвью матрицу сразу после установки камера
 	//так как в ней отсуствуют трансформации glRotate...
@@ -1606,7 +1621,6 @@ void Render(double delta_time)
 	//переносим координаты света в видовые координаты
 	MatrixMultiply<float, 1, 4, 4, 4>(light_pos, view_matrix, light_pos_v);
 
-	
 	location = glGetUniformLocationARB(phong_sh.program, "Ia");
 	glUniform3fARB(location, 0.9, 0, 0.9);
 	location = glGetUniformLocationARB(phong_sh.program, "Id");
@@ -1692,7 +1706,6 @@ void Render(double delta_time)
 	ss << L"Коорд. камеры: (" << std::setw(7) << camera.x() << "," << std::setw(7) << camera.y() << "," << std::setw(7) << camera.z() << ")" << std::endl;
 	ss << L"Параметры камеры: R=" << std::setw(7) << camera.distance() << ",fi1=" << std::setw(7) << camera.fi1() << ",fi2=" << std::setw(7) << camera.fi2() << std::endl;
 	ss << L"delta_time: " << std::setprecision(5)<< delta_time <<  L"   full_time: " << std::setprecision(2) << full_time << std::endl;
-
 
 	text.setPosition(10, gl.getHeight() - 10 - 180);
 	text.setText(ss.str().c_str());

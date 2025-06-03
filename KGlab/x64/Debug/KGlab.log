@@ -1,34 +1,34 @@
 ﻿  Render.cpp
-D:\загрузки\троянский рояль — копия\KGlabs-master\LAB4+\KGlab\Render.cpp(364,37): warning C4305: аргумент: усечение из "double" в "GLfloat"
-D:\загрузки\троянский рояль — копия\KGlabs-master\LAB4+\KGlab\Render.cpp(364,32): warning C4305: аргумент: усечение из "double" в "GLfloat"
-D:\загрузки\троянский рояль — копия\KGlabs-master\LAB4+\KGlab\Render.cpp(364,27): warning C4305: аргумент: усечение из "double" в "GLfloat"
+D:\загрузки\троянский рояль — копия\KGlabs-master\LAB4+\KGlab\Render.cpp(362,37): warning C4305: аргумент: усечение из "double" в "GLfloat"
+D:\загрузки\троянский рояль — копия\KGlabs-master\LAB4+\KGlab\Render.cpp(362,32): warning C4305: аргумент: усечение из "double" в "GLfloat"
+D:\загрузки\троянский рояль — копия\KGlabs-master\LAB4+\KGlab\Render.cpp(362,27): warning C4305: аргумент: усечение из "double" в "GLfloat"
+D:\загрузки\троянский рояль — копия\KGlabs-master\LAB4+\KGlab\Render.cpp(375,37): warning C4305: аргумент: усечение из "double" в "GLfloat"
+D:\загрузки\троянский рояль — копия\KGlabs-master\LAB4+\KGlab\Render.cpp(375,32): warning C4305: аргумент: усечение из "double" в "GLfloat"
+D:\загрузки\троянский рояль — копия\KGlabs-master\LAB4+\KGlab\Render.cpp(375,27): warning C4305: аргумент: усечение из "double" в "GLfloat"
 D:\загрузки\троянский рояль — копия\KGlabs-master\LAB4+\KGlab\Render.cpp(377,37): warning C4305: аргумент: усечение из "double" в "GLfloat"
 D:\загрузки\троянский рояль — копия\KGlabs-master\LAB4+\KGlab\Render.cpp(377,32): warning C4305: аргумент: усечение из "double" в "GLfloat"
 D:\загрузки\троянский рояль — копия\KGlabs-master\LAB4+\KGlab\Render.cpp(377,27): warning C4305: аргумент: усечение из "double" в "GLfloat"
-D:\загрузки\троянский рояль — копия\KGlabs-master\LAB4+\KGlab\Render.cpp(379,37): warning C4305: аргумент: усечение из "double" в "GLfloat"
-D:\загрузки\троянский рояль — копия\KGlabs-master\LAB4+\KGlab\Render.cpp(379,32): warning C4305: аргумент: усечение из "double" в "GLfloat"
-D:\загрузки\троянский рояль — копия\KGlabs-master\LAB4+\KGlab\Render.cpp(379,27): warning C4305: аргумент: усечение из "double" в "GLfloat"
-D:\загрузки\троянский рояль — копия\KGlabs-master\LAB4+\KGlab\Render.cpp(384,39): warning C4305: аргумент: усечение из "double" в "GLfloat"
-D:\загрузки\троянский рояль — копия\KGlabs-master\LAB4+\KGlab\Render.cpp(384,33): warning C4305: аргумент: усечение из "double" в "GLfloat"
+D:\загрузки\троянский рояль — копия\KGlabs-master\LAB4+\KGlab\Render.cpp(382,39): warning C4305: аргумент: усечение из "double" в "GLfloat"
+D:\загрузки\троянский рояль — копия\KGlabs-master\LAB4+\KGlab\Render.cpp(382,33): warning C4305: аргумент: усечение из "double" в "GLfloat"
+D:\загрузки\троянский рояль — копия\KGlabs-master\LAB4+\KGlab\Render.cpp(382,27): warning C4305: аргумент: усечение из "double" в "GLfloat"
+D:\загрузки\троянский рояль — копия\KGlabs-master\LAB4+\KGlab\Render.cpp(384,37): warning C4305: аргумент: усечение из "double" в "GLfloat"
+D:\загрузки\троянский рояль — копия\KGlabs-master\LAB4+\KGlab\Render.cpp(384,32): warning C4305: аргумент: усечение из "double" в "GLfloat"
 D:\загрузки\троянский рояль — копия\KGlabs-master\LAB4+\KGlab\Render.cpp(384,27): warning C4305: аргумент: усечение из "double" в "GLfloat"
-D:\загрузки\троянский рояль — копия\KGlabs-master\LAB4+\KGlab\Render.cpp(386,37): warning C4305: аргумент: усечение из "double" в "GLfloat"
-D:\загрузки\троянский рояль — копия\KGlabs-master\LAB4+\KGlab\Render.cpp(386,32): warning C4305: аргумент: усечение из "double" в "GLfloat"
-D:\загрузки\троянский рояль — копия\KGlabs-master\LAB4+\KGlab\Render.cpp(386,27): warning C4305: аргумент: усечение из "double" в "GLfloat"
-D:\загрузки\троянский рояль — копия\KGlabs-master\LAB4+\KGlab\Render.cpp(1546,12): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-D:\загрузки\троянский рояль — копия\KGlabs-master\LAB4+\KGlab\Render.cpp(1603,32): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
-D:\загрузки\троянский рояль — копия\KGlabs-master\LAB4+\KGlab\Render.cpp(1603,32): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-D:\загрузки\троянский рояль — копия\KGlabs-master\LAB4+\KGlab\Render.cpp(1603,42): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
-D:\загрузки\троянский рояль — копия\KGlabs-master\LAB4+\KGlab\Render.cpp(1603,42): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-D:\загрузки\троянский рояль — копия\KGlabs-master\LAB4+\KGlab\Render.cpp(1603,53): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
-D:\загрузки\троянский рояль — копия\KGlabs-master\LAB4+\KGlab\Render.cpp(1603,53): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-D:\загрузки\троянский рояль — копия\KGlabs-master\LAB4+\KGlab\Render.cpp(1611,35): warning C4305: аргумент: усечение из "double" в "GLfloat"
-D:\загрузки\троянский рояль — копия\KGlabs-master\LAB4+\KGlab\Render.cpp(1611,27): warning C4305: аргумент: усечение из "double" в "GLfloat"
-D:\загрузки\троянский рояль — копия\KGlabs-master\LAB4+\KGlab\Render.cpp(1613,35): warning C4305: аргумент: усечение из "double" в "GLfloat"
-D:\загрузки\троянский рояль — копия\KGlabs-master\LAB4+\KGlab\Render.cpp(1613,27): warning C4305: аргумент: усечение из "double" в "GLfloat"
-D:\загрузки\троянский рояль — копия\KGlabs-master\LAB4+\KGlab\Render.cpp(1618,37): warning C4305: аргумент: усечение из "double" в "GLfloat"
-D:\загрузки\троянский рояль — копия\KGlabs-master\LAB4+\KGlab\Render.cpp(1618,32): warning C4305: аргумент: усечение из "double" в "GLfloat"
-D:\загрузки\троянский рояль — копия\KGlabs-master\LAB4+\KGlab\Render.cpp(1618,27): warning C4305: аргумент: усечение из "double" в "GLfloat"
-D:\загрузки\троянский рояль — копия\KGlabs-master\LAB4+\KGlab\Render.cpp(1620,37): warning C4305: аргумент: усечение из "double" в "GLfloat"
-D:\загрузки\троянский рояль — копия\KGlabs-master\LAB4+\KGlab\Render.cpp(1620,32): warning C4305: аргумент: усечение из "double" в "GLfloat"
-D:\загрузки\троянский рояль — копия\KGlabs-master\LAB4+\KGlab\Render.cpp(1620,27): warning C4305: аргумент: усечение из "double" в "GLfloat"
+D:\загрузки\троянский рояль — копия\KGlabs-master\LAB4+\KGlab\Render.cpp(1561,12): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+D:\загрузки\троянский рояль — копия\KGlabs-master\LAB4+\KGlab\Render.cpp(1618,32): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+D:\загрузки\троянский рояль — копия\KGlabs-master\LAB4+\KGlab\Render.cpp(1618,32): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+D:\загрузки\троянский рояль — копия\KGlabs-master\LAB4+\KGlab\Render.cpp(1618,42): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+D:\загрузки\троянский рояль — копия\KGlabs-master\LAB4+\KGlab\Render.cpp(1618,42): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+D:\загрузки\троянский рояль — копия\KGlabs-master\LAB4+\KGlab\Render.cpp(1618,53): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+D:\загрузки\троянский рояль — копия\KGlabs-master\LAB4+\KGlab\Render.cpp(1618,53): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+D:\загрузки\троянский рояль — копия\KGlabs-master\LAB4+\KGlab\Render.cpp(1625,35): warning C4305: аргумент: усечение из "double" в "GLfloat"
+D:\загрузки\троянский рояль — копия\KGlabs-master\LAB4+\KGlab\Render.cpp(1625,27): warning C4305: аргумент: усечение из "double" в "GLfloat"
+D:\загрузки\троянский рояль — копия\KGlabs-master\LAB4+\KGlab\Render.cpp(1627,35): warning C4305: аргумент: усечение из "double" в "GLfloat"
+D:\загрузки\троянский рояль — копия\KGlabs-master\LAB4+\KGlab\Render.cpp(1627,27): warning C4305: аргумент: усечение из "double" в "GLfloat"
+D:\загрузки\троянский рояль — копия\KGlabs-master\LAB4+\KGlab\Render.cpp(1632,37): warning C4305: аргумент: усечение из "double" в "GLfloat"
+D:\загрузки\троянский рояль — копия\KGlabs-master\LAB4+\KGlab\Render.cpp(1632,32): warning C4305: аргумент: усечение из "double" в "GLfloat"
+D:\загрузки\троянский рояль — копия\KGlabs-master\LAB4+\KGlab\Render.cpp(1632,27): warning C4305: аргумент: усечение из "double" в "GLfloat"
+D:\загрузки\троянский рояль — копия\KGlabs-master\LAB4+\KGlab\Render.cpp(1634,37): warning C4305: аргумент: усечение из "double" в "GLfloat"
+D:\загрузки\троянский рояль — копия\KGlabs-master\LAB4+\KGlab\Render.cpp(1634,32): warning C4305: аргумент: усечение из "double" в "GLfloat"
+D:\загрузки\троянский рояль — копия\KGlabs-master\LAB4+\KGlab\Render.cpp(1634,27): warning C4305: аргумент: усечение из "double" в "GLfloat"
   KGlab.vcxproj -> D:\загрузки\троянский рояль — копия\KGlabs-master\LAB4+\x64\Debug\KGlab.exe
