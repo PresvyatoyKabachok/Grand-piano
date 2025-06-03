@@ -32,11 +32,11 @@ double full_time = 0;
 int location = 0;
 
 double CapAngle = 0.0;
-const double maxCapAngle = 25.0, speed = 40.0;
+const double maxCapAngle = 25.0, speed = 70.0;
 
 double moveZ = 0.0;
 bool isJumping = false;
-const double jumpHeight = 0.1;
+const double jumpHeight = 0.05;
 const double jumpDuration = 0.2; 
 double jumpTimer = 0.0;
 
@@ -166,7 +166,6 @@ void switchModes(OpenGL* sender, KeyEventArg arg)
 			break;
 		}
 		isJumping = !isJumping;
-		
 	}
 }
 
