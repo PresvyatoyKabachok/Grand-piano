@@ -1701,7 +1701,7 @@ void Render(double delta_time)
 	ss << L"от Z до / малая октава" << std::endl;
 	ss << L"F - Свет из камеры" << std::endl;
 	ss << L"G - двигать свет по горизонтали" << std::endl;
-	ss << L"G+ЛКМ двигать свет по вертекали" << std::endl;
+	ss << L"G+ЛКМ двигать свет по вертикали" << std::endl;
 	ss << L"Коорд. света: (" << std::setw(7) <<  light.x() << "," << std::setw(7) << light.y() << "," << std::setw(7) << light.z() << ")" << std::endl;
 	ss << L"Коорд. камеры: (" << std::setw(7) << camera.x() << "," << std::setw(7) << camera.y() << "," << std::setw(7) << camera.z() << ")" << std::endl;
 	ss << L"Параметры камеры: R=" << std::setw(7) << camera.distance() << ",fi1=" << std::setw(7) << camera.fi1() << ",fi2=" << std::setw(7) << camera.fi2() << std::endl;
