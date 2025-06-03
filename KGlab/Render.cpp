@@ -25,10 +25,24 @@ Light light;
 #include "Camera.h"
 Camera camera;
 
+
 bool isCapOp = false;
+float view_matrix[16];
+double full_time = 0;
+int location = 0;
+
+double CapAngle = 0.0;
+const double maxCapAngle = 25.0, speed = 40.0;
+
+double moveZ = 0.0;
+bool isJumping = false;
+const double jumpHeight = 0.1;
+const double jumpDuration = 0.2; 
+double jumpTimer = 0.0;
+
 
 //переключение режимов освещения, текстурирования, альфаналожения
-void switchModes(OpenGL *sender, KeyEventArg arg)
+void switchModes(OpenGL* sender, KeyEventArg arg)
 {
 	//конвертируем код клавиши в букву
 	auto key = LOWORD(MapVirtualKeyA(arg.key, MAPVK_VK_TO_CHAR));
@@ -151,6 +165,8 @@ void switchModes(OpenGL *sender, KeyEventArg arg)
 			PlaySoundA("sounds/0meow_B_minor.wav", NULL, SND_FILENAME | SND_ASYNC);
 			break;
 		}
+		isJumping = !isJumping;
+		
 	}
 }
 
@@ -287,12 +303,38 @@ Point CalculateQuadNormal(const Point& A, const Point& B, const Point& C, const 
 
 	return N;
 }
-float view_matrix[16];
-double full_time = 0;
-int location = 0;
 
-double CapAngle = 0.0;
-const double maxCapAngle = 25.0, speed = 40.0;
+void updateJump(double delta_time)
+{
+	if (isJumping)
+	{
+		jumpTimer += delta_time;
+		double t = jumpTimer / jumpDuration;
+
+		if (t <= 1.0)
+		{
+			// Параболическая анимация
+			moveZ = -4.0 * t * (t - 1.0); // от 0 до 1 и обратно
+			moveZ *= jumpHeight;
+		}
+		else
+		{
+			// Заканчиваем прыжок
+			moveZ = 0.0;
+			isJumping = false;
+			jumpTimer = 0.0;
+		}
+	}
+}
+
+void DrawJump(double delta_time)
+{
+	updateJump(delta_time);
+	glPushMatrix();
+	glTranslated(0, moveZ, 0);
+	f.Draw();
+	glPopMatrix();
+}
 
 void updateCapAnim(double delta_time)
 {
@@ -1603,7 +1645,7 @@ void Render(double delta_time)
 	glTranslated(3.483, -1.9, -0.14);
 	glScaled(3, 3, 3);
 	glRotated(180, 0, 1, 1);
-	f.Draw();
+	DrawJump(delta_time);
 	glPopMatrix();
 
 	//===============================================
